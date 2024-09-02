@@ -51,8 +51,38 @@ p {
 .visible {
     display: block;
 }
-.projects h3 {
+.projects .project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.project-item {
+    width: 32%;
+}
+.project-item h3 {
     cursor: pointer;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+.project-item p {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    width: 200%;
+    text-align: center;
+    margin: 0 auto;
+}
+.project-item:nth-child(2) p {
+    margin-left: -53.15%; /* Shift the paragraph to the left */
+}
+.project-item:nth-child(5) p {
+    margin-left: -53.15%; /* Shift the paragraph to the left */
+}
+.project-item:nth-child(3n) p {
+    margin-left: -106.3%; /* Shift the paragraph to the left */
 }
 #about-me p {
     font-size: 18px;
