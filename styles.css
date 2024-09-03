@@ -3,41 +3,44 @@
     font-weight: 400;
     font-style: normal;
 }
-/*html {
+html {
     background: #FFFFFF;
-    background: -moz-linear-gradient(top, #3c50ff 0%, #00811c 69%, #001f06 100%);
-    background: -webkit-linear-gradient(top, #3c50ff 0%, #00811c 69%, #001f06 100%);
-    background: linear-gradient(to bottom, #defff4 0%, #00811c 69%, #001f06 100%);
+    background: -moz-linear-gradient(top, #f15252 0%, #bd7458 50%, #d14385 100%);
+    background: -webkit-linear-gradient(top, #f15252 0%, #bd7458 50%, #d14385 100%);
+    background: linear-gradient(to bottom, #f15252 0%, #bd7458 50%, #d14385 100%);
     background-size: cover;
-}*/
+}
 header {
     display: flex;
     width: 100%;
     height: 60px;
     top: 0;
     left: 0;
-    border-bottom: 2px solid black;
+    /*border-bottom: 2px solid black;*/
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    color: #FFFFFF;
-    background-color: rgba(65, 26, 128, 95%);
+    color: #ffffff;
+    background-color: rgba(31, 31, 31, 0.95);
+    z-index: 2;
 }
 header h2 {
     margin: auto 5px;
 }
 a {
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
 }
 h1 {
     font-size: 160px;
     margin-bottom: 0px;
     margin-top: 20px;
+    color: white
 }
 h2 {
     font-size: 40px;
     margin-bottom: 10px;
+    color: white;
 }
 h3 {
     font-size: 30px;
@@ -62,6 +65,19 @@ img {
     margin: 20px;
     transition: 2s;
     border-radius: 74% 26% 72% 28% / 31% 40% 60% 69%;
+    animation: MoveUpDown 4s linear infinite;
+    position: relative;
+    z-index: 1;
+}
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: -30px;
+      left: -10px;
+    }
+    50% {
+      bottom: 0px;
+      left: 10px;
+    }
 }
 img:hover {
     transition: 2s;
@@ -113,6 +129,10 @@ img:hover {
     min-height: 100vh;
     margin-top: 60px;
 }
+.contact {
+    min-height: 100vh;
+    margin-top: 80px;
+}
 #about-me-main {
     display: flex;
     align-items: center;
@@ -135,12 +155,23 @@ i {
     padding: 10px;
     border-radius: 8px;
     margin: 10px;
+    margin-bottom: 30px;
 }
 #skills-logos {
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
     flex-wrap: wrap;
+}
+#skills-logos-text {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin: auto;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    width: 60%;
+    text-align: center;
 }
 .clearfix:after {
     clear: both;
@@ -159,6 +190,8 @@ i {
     font-size: 26px;
     margin-top: 0px;
     margin-bottom: 0px;
+    line-height: 50px;
+    color: white;
 }
 footer p{
     font-size: 10px;
