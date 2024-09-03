@@ -13,49 +13,60 @@
 </head>
 <body>
     <header>
-        <h1>LOGO</h1>
+        <h2>LOGO</h2>
         <nav>
             <ul>
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-        <!--Make sure page is responsive to all devices/screensizes etc. Look at gamifycat.io. <br> Text to appear/highlight as you scroll with page?-->
+        <!--Make sure page is responsive to all devices/screensizes etc. Look at gamifycat.io. Text to appear/highlight as you scroll with page?-->
     <section id="about-me">
-        <h2>Joseph Summers</h2>
-        <p>I am looking to change careers from <br>being a Tattoo Artist to a Software Developer.</p>
-        <p>I have been teaching myself various languages through <br>online courses since January 11th 2024, which means <br> 
-            I've been working towards this goal for <span id="hours">00:00:00</span> hours & counting...</p>
-        <!--Big open section with name and image to fill initial viewport before allowing scroll? Make nav menu and icon to open/slide out and bring up links
-        lorem ipsum - include image? Make image box more interesting (floating/moving/not boring square/maybe increases in size on hover)
-        Include an interactive counter for how long I've been learning?-->
+        <div id="about-me-main">
+            <h1><span id="forename">Joseph</span><br><span id="surname">Summers</span></h1>
+            <img src="https://www.netsolutions.com/insights/wp-content/uploads/2022/06/how-to-become-a-software-developer.webp" alt="image of me" width="600" height="480">
+        </div>
+        <div id="about-me-paragraph">
+            <p>I am working towards changing careers from
+                being a Tattoo Artist to a Software Developer.
+                I have been teaching myself various languages 
+                through online courses since January 11th 2024,
+                which means I've been working towards this goal
+                for <span id="hours">00:00:00</span> hours & counting...</p>
+            <!--Big open section with name and image to fill initial viewport before allowing scroll? Make nav menu and icon to open/slide out and bring up links
+            lorem ipsum - include image? Make image box more interesting (floating/moving/not boring square/maybe increases in size on hover)
+            Include an interactive counter for how long I've been learning?-->
+    </div>
+    <div class="clearfix"></div>
     </section>
     <section id="skills-section">
         <h2>Skills/Experience Acquired</h2>
-        <i class="devicon-html5-plain" id="icon-html"></i>
-        <i class="devicon-css3-plain" id="icon-css"></i>
-        <i class="devicon-javascript-plain" id="icon-js"></i>
-        <i class="devicon-python-plain" id="icon-python"></i>
-        <i class="devicon-ruby-plain" id="icon-ruby"></i>
-        <i class="devicon-visualstudio-plain" id="icon-vs"></i>
-        <i class="devicon-markdown-original" id="icon-md"></i>
-        <i class="devicon-nodejs-plain-wordmark" id="icon-node"></i>
-        <i class="devicon-git-plain" id="icon-git"></i>
-        <i class="devicon-github-original" id="icon-github"></i>
-
-        <p class="hidden" id="text-html">Experience in HTML from Full Stack Engineer Course & Portfolio Website</p>
-        <p class="hidden" id="text-css">Experience in CSS from Full Stack Engineer Course & Portfolio Website</p>
-        <p class="hidden" id="text-js">Experience in JavaScript from Full Stack Engineer Course & Portfolio Website</p>
-        <p class="hidden" id="text-python">Experience in Python from Introductory Python Course on Codecademy</p>
-        <p class="hidden" id="text-ruby">Experience in Ruby from Full Stack Engineer Course & Portfolio Website</p>
-        <p class="hidden" id="text-vs">Experience in Visual Studio from Full Stack Engineer Course & Portfolio Website</p>
-        <p class="hidden" id="text-md">Experience in Markdown from Full Stack Engineer Course & Portfolio Website</p>
-        <p class="hidden" id="text-node">Experience in Node.js from Full Stack Engineer Course & Portfolio Website</p>
-        <p class="hidden" id="text-git">Experience in Git from Full Stack Engineer Course & Portfolio Website</p>
-        <p class="hidden" id="text-github">Experience in GitHub from Full Stack Engineer Course & Portfolio Website</p>
-        <!--List of logo's of languages I've been learning, finish Ruby and Python courses, add C++ when completing that course. List/display codecademy certificates (again on a dropdown)?-->
+        <div id="skills-logos">
+            <i class="devicon-html5-plain" id="icon-html"></i>
+            <i class="devicon-css3-plain" id="icon-css"></i>
+            <i class="devicon-javascript-plain" id="icon-js"></i>
+            <i class="devicon-python-plain" id="icon-python"></i>
+            <i class="devicon-ruby-plain" id="icon-ruby"></i>
+            <i class="devicon-visualstudio-plain" id="icon-vs"></i>
+            <i class="devicon-markdown-original" id="icon-md"></i>
+            <i class="devicon-nodejs-plain-wordmark" id="icon-node"></i>
+            <i class="devicon-git-plain" id="icon-git"></i>
+            <i class="devicon-github-original" id="icon-github"></i>
+        </div>
+        <div id="skills-logos">    
+            <p class="hidden" id="text-html">Experience in HTML from Full Stack Engineer Course & Portfolio Website</p>
+            <p class="hidden" id="text-css">Experience in CSS from Full Stack Engineer Course & Portfolio Website</p>
+            <p class="hidden" id="text-js">Experience in JavaScript from Full Stack Engineer Course & Portfolio Website</p>
+            <p class="hidden" id="text-python">Experience in Python from Introductory Python Course on Codecademy</p>
+            <p class="hidden" id="text-ruby">Experience in Ruby from Full Stack Engineer Course & Portfolio Website</p>
+            <p class="hidden" id="text-vs">Experience in Visual Studio from Full Stack Engineer Course & Portfolio Website</p>
+            <p class="hidden" id="text-md">Experience in Markdown from Full Stack Engineer Course & Portfolio Website</p>
+            <p class="hidden" id="text-node">Experience in Node.js from Full Stack Engineer Course & Portfolio Website</p>
+            <p class="hidden" id="text-git">Experience in Git from Full Stack Engineer Course & Portfolio Website</p>
+            <p class="hidden" id="text-github">Experience in GitHub from Full Stack Engineer Course & Portfolio Website</p>
+        </div>
     </section>
     <section class="projects">
         <h2>Projects</h2>
