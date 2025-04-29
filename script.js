@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //Timer in About Me section
 
-    const startTime = new Date("January 11, 2024 00:00:00").getTime();
+    /*const startTime = new Date("January 11, 2024 00:00:00").getTime();
 
     const updateTimer = () => {
         const now = new Date().getTime();
@@ -20,11 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     setInterval (updateTimer, 1000);
-    updateTimer();
+    updateTimer();*/
 
     //Projects dropdown section
 
-    document.querySelectorAll('.projects h3').forEach(heading => {
+    /*document.querySelectorAll('.projects h3').forEach(heading => {
         heading.addEventListener('click', handleHeadingClick);
     });
 
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
             targetProject.classList.remove('hidden');
             targetProject.classList.add('visible');
         }
-    }
+    } */
 
     //Skills icon dropdown section
 
@@ -123,6 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!isCurrentlyVisible) {
             targetParagraph.classList.remove('hidden');
             targetParagraph.classList.add('visible');
+            targetParagraph.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     }
 
